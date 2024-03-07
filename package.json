@@ -17,8 +17,13 @@
     "node": ">=18"
   },
   "packageManager": "bun@1.0.27",
+  "//": [
+    "multi-level globs aren't supported by bun (yet)",
+    "https://github.com/oven-sh/bun/issues/1918"
+  ],
   "workspaces": [
     "apps/*",
+    "apps/graphql-federation/*",
     "packages/*"
   ]
 }
